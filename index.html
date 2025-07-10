@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comtel Group - IT Solutions That Work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/framer-motion@10.16.4/dist/framer-motion.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            200: '#bfdbfe',
+                            300: '#93c5fd',
+                            400: '#60a5fa',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        secondary: {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center space-x-2">
+                        <img src="attached_assets/comtel-logo.png" alt="Comtel Group" class="h-14 w-auto md:h-16 lg:h-20 xl:h-24 transition-all duration-300">
+                       
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#services" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#strengths" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Strengths</a>
+                        <a href="#clients" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Clients</a>
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-red-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Home</a>
+                <a href="#about" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">About</a>
+                <a href="#services" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Services</a>
+                <a href="#strengths" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Strengths</a>
+                <a href="#clients" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Clients</a>
+                <a href="#contact" class="nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-red-600 hover:bg-gray-50">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="attached_assets/image_1752137322893.png" alt="Technology Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+            <div class="hero-content">
+                <div class="mb-8 animate-fade-in">
+                    <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-6xl font-extrabold text-red-600 tracking-widest  font-serif drop-shadow-lg">Comtel Group</h1>
+                </div>
+                <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight animate-fade-in">
+                    Future-Ready
+                    <span class="text-red-500">IT Solutions</span>
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-200 mb-12 font-light max-w-4xl mx-auto animate-fade-in animation-delay-300">
+                    Empowering businesses with cutting-edge technology and innovation since 2002
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in animation-delay-600">
+                    <a href="#services" class="inline-flex items-center px-10 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 shadow-2xl hover:shadow-red-500/25 transform hover:scale-105">
+                        Explore Solutions
+                        <i class="fas fa-rocket ml-3"></i>
+                    </a>
+                    <a href="#contact" class="inline-flex items-center px-10 py-4 border-2 border-white text-white font-semibold rounded-xl hover:bg-white hover:text-gray-900 transition-all duration-300 backdrop-blur-sm">
+                        Start Your Journey
+                        <i class="fas fa-arrow-right ml-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-element absolute top-20 left-10 w-16 h-16 border border-white/20 rounded-full backdrop-blur-sm"></div>
+            <div class="floating-element absolute top-40 right-20 w-20 h-20 border border-red-500/30 rounded-full backdrop-blur-sm"></div>
+            <div class="floating-element absolute bottom-20 left-20 w-12 h-12 border border-white/20 rounded-full backdrop-blur-sm"></div>
+            <div class="floating-element absolute bottom-40 right-10 w-24 h-24 border border-red-500/20 rounded-full backdrop-blur-sm"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-br from-slate-900 via-gray-900 to-black relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M50 50c13.8 0 25-11.2 25-25S63.8 0 50 0 25 11.2 25 25s11.2 25 25 25z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-white mb-6">About Comtel Group</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-300">Pioneering IT excellence for over two decades</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content Card -->
+                <div class="about-content">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-building text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white mb-2">Established 2002</h3>
+                                    <p class="text-gray-300">Premier Telecommunication, Security Systems & Fire Suppression Solutions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-award text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white mb-2">Market Leadership</h3>
+                                    <p class="text-gray-300">20+ years of excellence in Security & Surveillance Industry</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-handshake text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-semibold text-white mb-2">Total Solutions</h3>
+                                    <p class="text-gray-300">One-window service for complete customer satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image & Stats -->
+                <div class="about-image">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div class="rounded-2xl overflow-hidden shadow-2xl mb-8">
+                            <img src="attached_assets/image_1752137460532.png" alt="Comtel Solutions" class="w-full h-64 object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        </div>
+                        
+                        <!-- Stats Cards -->
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-red-600 rounded-xl p-6 text-center text-white shadow-lg">
+                                <div class="text-3xl font-bold mb-1">20+</div>
+                                <div class="text-sm">Years</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white shadow-lg border border-white/20">
+                                <div class="text-3xl font-bold mb-1">1500+</div>
+                                <div class="text-sm">Clients</div>
+                            </div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center text-white shadow-lg border border-white/20">
+                                <div class="text-3xl font-bold mb-1">24/7</div>
+                                <div class="text-sm">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20 bg-gradient-to-br from-white via-gray-50 to-blue-50 relative overflow-hidden">
+        <!-- Geometric Background -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ef4444" fill-opacity="0.04"%3E%3Cpolygon points="100,0 200,50 200,150 100,200 0,150 0,50"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-gray-900 mb-6">Our Core Values</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The foundation of our market leadership and commitment to excellence</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="value-card group bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-blue-200 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Continuous Improvement</h3>
+                    <p class="text-gray-600">Always evolving to serve you better</p>
+                </div>
+                
+                <div class="value-card group bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-green-200 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Teamwork</h3>
+                    <p class="text-gray-600">Collaboration drives our success</p>
+                </div>
+                
+                <div class="value-card group bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-purple-200 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Commitment</h3>
+                    <p class="text-gray-600">Dedicated to your success</p>
+                </div>
+                
+                <div class="value-card group bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-red-200 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-shield-check text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Integrity</h3>
+                    <p class="text-gray-600">Honest and transparent practices</p>
+                </div>
+                
+                <div class="value-card group bg-white rounded-2xl shadow-xl p-8 text-center hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-yellow-200 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-star text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
+                    <p class="text-gray-600">Setting the highest standards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-20 bg-gradient-to-br from-red-600 via-red-700 to-red-800 relative overflow-hidden">
+        <!-- Animated Background -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.05"%3E%3Cpath d="M200 200c55.2 0 100-44.8 100-100s-44.8-100-100-100-100 44.8-100 100 44.8 100 100 100z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold text-white mb-6">Mission & Vision</h2>
+                <div class="w-24 h-1 bg-white mx-auto mb-4"></div>
+                <p class="text-xl text-red-100 max-w-3xl mx-auto">Guiding principles that drive our commitment to excellence</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="mission-card group bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-10 hover:shadow-3xl transition-all duration-500 border border-white/20 hover:border-white/40 hover:-translate-y-2">
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-bullseye text-red-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-2">Mission</h3>
+                        <div class="w-16 h-1 bg-white/50 mx-auto"></div>
+                    </div>
+                    <p class="text-white/90 leading-relaxed text-lg">
+                        To be the leading provider of security products and solutions establishing ourselves as a premier brand by continuous commitment towards excellence in quality, high performance, innovation, and customer satisfaction.
+                    </p>
+                </div>
+                
+                <div class="vision-card group bg-white/10 backdrop-blur-sm rounded-3xl shadow-2xl p-10 hover:shadow-3xl transition-all duration-500 border border-white/20 hover:border-white/40 hover:-translate-y-2">
+                    <div class="text-center mb-8">
+                        <div class="w-20 h-20 bg-white rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-eye text-red-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-3xl font-bold text-white mb-2">Vision</h3>
+                        <div class="w-16 h-1 bg-white/50 mx-auto"></div>
+                    </div>
+                    <p class="text-white/90 leading-relaxed text-lg">
+                        To become a trusted brand in the global security industry, nurturing in our customers and communities an eternal sense of loyalty towards our products and services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50 relative overflow-hidden">
+        <!-- Modern Background Pattern -->
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ef4444" fill-opacity="0.02"%3E%3Cpath d="M150 150c41.4 0 75-33.6 75-75s-33.6-75-75-75-75 33.6-75 75 33.6 75 75 75zm0 75c41.4 0 75-33.6 75-75s-33.6-75-75-75-75 33.6-75 75 33.6 75 75 75z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-20">
+                <h2 class="text-6xl font-bold text-gray-900 mb-6">Our Services</h2>
+                <div class="w-32 h-1 bg-gradient-to-r from-red-500 to-red-600 mx-auto mb-6"></div>
+                <p class="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Comprehensive IT and security solutions tailored to your business needs
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-20">
+                <div class="service-card group bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 border border-gray-100 hover:border-red-200 relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-5">
+                        <img src="attached_assets/image_1752136791561.png" alt="IT Solutions" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-desktop text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Office Automation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Complete office automation solutions including telecommunications, networking, and productivity systems.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card group bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 border border-gray-100 hover:border-orange-200 relative overflow-hidden">
+                    <div class="relative text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-fire-extinguisher text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Fire Safety</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Advanced fire suppression systems and safety solutions to protect your business and assets.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card group bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 border border-gray-100 hover:border-green-200 relative overflow-hidden">
+                    <div class="absolute inset-0 opacity-5">
+                        <img src="attached_assets/image_1752136695662.png" alt="Security Systems" class="w-full h-full object-cover">
+                    </div>
+                    <div class="relative text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-shield-alt text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Security & Surveillance</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Electronic security systems, biometrics, and surveillance solutions for comprehensive protection.
+                        </p>
+                    </div>
+                </div>
+                <div class="service-card group bg-white rounded-3xl shadow-2xl p-8 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 border border-gray-100 hover:border-purple-200 relative overflow-hidden">
+                    <div class="relative text-center">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-truck text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Logistics</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Logistics management systems to streamline your supply chain and operational efficiency.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Verticals Section -->
+            <div class="bg-gray-50 rounded-lg p-8">
+                <div class="text-center mb-8">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Business Verticals & Product Offerings</h3>
+                    <div class="w-16 h-1 bg-primary-600 mx-auto"></div>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-phone text-primary-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">IP PABX & Communication</h4>
+                        <p class="text-gray-600 text-sm">Voice Logger, Call Center Solutions</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-desktop text-blue-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Digital Solutions</h4>
+                        <p class="text-gray-600 text-sm">Digital Copier, Projector & Pana Board</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Security Systems</h4>
+                        <p class="text-gray-600 text-sm">Access Control, CCTV, Intrusion Alarm</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-video text-purple-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Audio & Video</h4>
+                        <p class="text-gray-600 text-sm">Video Conference, PA Systems</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-fire-extinguisher text-red-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Fire Safety</h4>
+                        <p class="text-gray-600 text-sm">Fire Alarm System, Suppression Systems</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-building text-orange-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Building Management</h4>
+                        <p class="text-gray-600 text-sm">Hydrant Systems, Perimeter Security</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-truck text-indigo-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Logistics</h4>
+                        <p class="text-gray-600 text-sm">Logistics Management System</p>
+                    </div>
+                    <div class="text-center bg-white rounded-lg p-4 shadow-sm">
+                        <i class="fas fa-cog text-gray-600 text-2xl mb-3"></i>
+                        <h4 class="font-semibold text-gray-900 mb-2">Service Backup</h4>
+                        <p class="text-gray-600 text-sm">24/7 Support, 5-Hour Response</p>
+                    </div>
+                </div>
+                
+                <!-- Fire Product Range Section -->
+                <div class="bg-gradient-to-r from-red-50 to-orange-50 rounded-lg p-6 mb-6 border-l-4 border-red-500">
+                    <h4 class="text-lg font-bold text-red-800 mb-4 text-center">Fire Product Range</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-red-100">
+                            <i class="fas fa-fire-alt text-red-600 text-xl mb-2"></i>
+                            <h5 class="font-semibold text-gray-800 text-sm mb-1">Fire Alarm Systems</h5>
+                            <p class="text-xs text-gray-600">Conventional & Addressable</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-red-100">
+                            <i class="fas fa-door-open text-red-600 text-xl mb-2"></i>
+                            <h5 class="font-semibold text-gray-800 text-sm mb-1">Fire Protection</h5>
+                            <p class="text-xs text-gray-600">Fire Rated Door, Fireproof Glass</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-red-100">
+                            <i class="fas fa-fire-extinguisher text-red-600 text-xl mb-2"></i>
+                            <h5 class="font-semibold text-gray-800 text-sm mb-1">Fire Fighting</h5>
+                            <p class="text-xs text-gray-600">Extinguisher, Hydrant System</p>
+                        </div>
+                        <div class="bg-white rounded-lg p-4 shadow-sm border border-red-100">
+                            <i class="fas fa-shield-alt text-red-600 text-xl mb-2"></i>
+                            <h5 class="font-semibold text-gray-800 text-sm mb-1">Fire Suppression</h5>
+                            <p class="text-xs text-gray-600">Panels, Signage, Fire Ball</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Backup Details -->
+                <div class="bg-gradient-to-r from-primary-50 to-blue-50 rounded-lg p-6 border-l-4 border-primary-500">
+                    <h4 class="text-lg font-bold text-primary-800 mb-4 text-center">Service Backup Guarantee</h4>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                        <div class="flex flex-col items-center bg-white rounded-lg p-3 shadow-sm border border-primary-100">
+                            <i class="fas fa-mobile-alt text-primary-600 text-xl mb-2"></i>
+                            <span class="text-sm text-gray-700">Qualified engineers on mobile</span>
+                        </div>
+                        <div class="flex flex-col items-center bg-white rounded-lg p-3 shadow-sm border border-primary-100">
+                            <i class="fas fa-tools text-primary-600 text-xl mb-2"></i>
+                            <span class="text-sm text-gray-700">Periodic maintenance</span>
+                        </div>
+                        <div class="flex flex-col items-center bg-white rounded-lg p-3 shadow-sm border border-primary-100">
+                            <i class="fas fa-life-ring text-primary-600 text-xl mb-2"></i>
+                            <span class="text-sm text-gray-700">Stand-by facility</span>
+                        </div>
+                        <div class="flex flex-col items-center bg-white rounded-lg p-3 shadow-sm border border-primary-100">
+                            <i class="fas fa-clock text-primary-600 text-xl mb-2"></i>
+                            <span class="text-sm text-gray-700">24/7 complaint logging</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="py-20 bg-gradient-to-br from-slate-100 to-gray-200 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23475569" fill-opacity="0.04"%3E%3Cpolygon points="60 0 90 30 90 90 30 90 0 60 0 0"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Strengths</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-600">We bring to you the best in every aspect</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="strength-card text-center bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 border border-gray-200 hover:border-red-300">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-star text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Best Products & Performance</h3>
+                    <p class="text-gray-600">
+                        Manufactured by market leaders and sourced after thorough study, testing and due diligence.
+                    </p>
+                </div>
+                <div class="strength-card text-center bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Best Manpower</h3>
+                    <p class="text-gray-600">
+                        Qualified and company-trained sales and service staff to understand customer needs and provide optimum solutions.
+                    </p>
+                </div>
+                <div class="strength-card text-center bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Best Practices</h3>
+                    <p class="text-gray-600">
+                        Courteous, understanding, and ethical approach in all aspects and functions of our business.
+                    </p>
+                </div>
+                <div class="strength-card text-center bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Best Prices</h3>
+                    <p class="text-gray-600">
+                        We buy originals in bulk, passing purchase price benefits to customers – ensuring better than best industry prices!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.02"%3E%3Cpath d="M100 100c27.6 0 50-22.4 50-50s-22.4-50-50-50-50 22.4-50 50 22.4 50 50 50zm0 50c27.6 0 50-22.4 50-50s-22.4-50-50-50-50 22.4-50 50 22.4 50 50 50z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Our Clients</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-300">
+                    Trusted by over 1500+ satisfied customers across India
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="client-card bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 flex items-center justify-center border border-white/20 hover:border-red-400">
+                    <div class="text-center">
+                        <div class="text-white font-semibold">Association of State Road Transport Undertaking</div>
+                    </div>
+                </div>
+                <div class="client-card bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 flex items-center justify-center border border-white/20 hover:border-red-400">
+                    <div class="text-center">
+                        <div class="text-white font-semibold">Cinepolis India Pvt. Ltd.</div>
+                        <div class="text-gray-300 text-sm">75+ Locations</div>
+                    </div>
+                </div>
+                <div class="client-card bg-white/10 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all duration-300 flex items-center justify-center border border-white/20 hover:border-red-400">
+                    <div class="text-center">
+                        <div class="text-white font-semibold">Clair Volex Knowledge Processes</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Dhoot Group of Companies</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">FAB India Overseas Pvt. Ltd.</div>
+                        <div class="text-gray-500 text-sm">100+ Stores</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">G.D. Goenka School, Dwarka</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Gateway Rail Freight Pvt. Ltd.</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Hero Motocorp</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Hindustan India Limited</div>
+                        <div class="text-gray-500 text-sm">CK Birla Group</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">IET Engineering College</div>
+                        <div class="text-gray-500 text-sm">Alwar</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Jagson Pal Pharmaceuticals</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Lancer Shoe</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Laxmi Vilas Bank</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">MapMyIndia</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Motherson Group</div>
+                        <div class="text-gray-500 text-sm">25+ Locations</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">NIDM</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Plan International</div>
+                        <div class="text-gray-500 text-sm">NGO</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Subros Limited</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Save The Children</div>
+                        <div class="text-gray-500 text-sm">NGO</div>
+                    </div>
+                </div>
+                <div class="client-card bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="text-gray-700 font-semibold">Wegman Group of Companies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-4"></div>
+                <p class="text-xl text-gray-300">
+                    Get in touch with our team for your IT and security solutions
+                </p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="contact-info">
+                    <h3 class="text-2xl font-bold mb-8 text-red-600">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-red-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-red-500">Address</h4>
+                                <p class="text-gray-300 font-semibold">
+                                    33 B, 1st Floor, M.B. Road,<br>
+                                    Saidula Jab, Near Lingaya’s,<br>
+                                    New Delhi - 110030
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-red-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-red-500">Phone</h4>
+                                <p class="text-gray-300 font-semibold">46013100 / 46013122</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-red-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-red-500">Email</h4>
+                                <p class="text-gray-300 font-semibold">neeraj.k@comtelgroup.in</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-globe text-red-600 text-xl mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-semibold mb-2 text-red-500">Website</h4>
+                                <p class="text-gray-300 font-semibold">www.comtelgroup.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form bg-white rounded-lg p-8 text-gray-900 shadow-xl border border-red-100">
+                    <h3 class="text-2xl font-bold mb-6">Send Message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium mb-2">Phone</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-600 focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-red-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-300">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="col-span-2 md:col-span-1">
+                    <h3 class="text-2xl font-bold mb-4">Comtel Group</h3>
+                    <p class="text-gray-300 mb-4">
+                        Your trusted partner for IT and security solutions since 2002.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Office Automation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Fire Safety</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Security & Surveillance</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Logistics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#strengths" class="hover:text-white transition-colors">Our Strengths</a></li>
+                        <li><a href="#clients" class="hover:text-white transition-colors">Clients</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="font-semibold">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            33 B, 1st Floor, M.B. Road, Saidula Jab, Near Lingaya’s, New Delhi - 110030
+                        </li>
+                        <li class="font-semibold">
+                            <i class="fas fa-phone mr-2"></i>
+                            46013100 / 46013122
+                        </li>
+                        <li class="font-semibold">
+                            <i class="fas fa-envelope mr-2"></i>
+                            neeraj.k@comtelgroup.in
+                        </li>
+                        <li class="font-semibold">
+                            <i class="fas fa-globe mr-2"></i>
+                            www.comtelgroup.in
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Comtel Group. All rights reserved.</p>
+            </div>
+            <div class="mt-8 text-center">
+                <a href="https://indiamart.com/comtel-communications-delhi/enquiry.html" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 bg-red-700 text-white rounded-lg font-semibold hover:bg-blue-800 transition">
+                    <i class="fas fa-store mr-2"></i>
+                    Visit us on IndiaMART
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
